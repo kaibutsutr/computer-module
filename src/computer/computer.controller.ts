@@ -8,7 +8,7 @@ export class ComputerController {
     private diskService: DiskService,
     private cpuService: CpuService,
   ) {}
-  @Get
+  @Get()
   run() {
     const computed = this.cpuService.compute(5, 3);
     const data = this.diskService.getData();
